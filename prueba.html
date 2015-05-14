@@ -33,6 +33,8 @@
         appendText(document.getElementById("user"), data[2].nickname, true);
         appendText(document.getElementById("name"), data[2].first_name, true);
         appendText(document.getElementById("lastname"), data[2].last_name, true);
+                appendText(document.getElementById("token"), Meli.getToken(), true);
+
       }});
 
     
@@ -73,6 +75,8 @@
     <tr><td>User:</td><td id="user"></td></tr>
     <tr><td>Nombre:</td><td id="name"></td></tr>
     <tr><td>Apellido:</td><td id="lastname"></td></tr>
+    <tr><td>AccessToken:</td><td id="token"></td></tr>
+
   </table>
   <button onClick="loadData();">Get data</button>
   <button onClick="logout();">Logout</button>
